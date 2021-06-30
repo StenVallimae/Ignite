@@ -1,7 +1,13 @@
+import React from "react";
+//Components and pages
+import Home from "./pages/home";
+import GlobalStyles from "./components/GlobalStyles";
+
 function App() {
   return (
     <div className="App">
-      <h1>Hello Ignite!</h1>
+      <GlobalStyles />
+      <Home />
     </div>
   );
 }

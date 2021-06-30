@@ -29,7 +29,15 @@ const currentDate = `${currentYear}-${currentMonth}-${currentDay}`;
 const lastYear = `${currentYear - 1}-${currentMonth}-${currentDay}`;
 const nextYear = `${currentYear + 1}-${currentMonth}-${currentDay}`;
 
+//api key
+const key = "03cc45cb9a5645d2bd29487021a8b213";
+const key_url = `key=${key}`;
+
 //popular games
-const popular_games = `games?dates=${lastYear},${currentDate}&ordering=-rating&page_size=10`;
+const popular_games = `games?${key_url}&dates=${lastYear},${currentDate}&ordering=-rating&page_size=12`;
+const upcoming_games = `games?${key_url}&dates=${currentDate},${nextYear}&ordering=-added&page_size=12`;
+const newGames = `games?${key_url}&dates=${lastYear},${currentDate}&ordering=-released&page_size=12`;
 
 export const popularGamesURL = () => `${base_url}${popular_games}`;
+export const upcomingGamesURL = () => `${base_url}${upcoming_games}`;
+export const newGamesURL = () => `${base_url}${newGames}`;
