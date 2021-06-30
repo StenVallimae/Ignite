@@ -30,7 +30,7 @@ const lastYear = `${currentYear - 1}-${currentMonth}-${currentDay}`;
 const nextYear = `${currentYear + 1}-${currentMonth}-${currentDay}`;
 
 //api key
-const key = "03cc45cb9a5645d2bd29487021a8b213";
+const key = "f612c98924a14cc98d2200c5e9bdbc5b";
 const key_url = `key=${key}`;
 
 //popular games
@@ -41,3 +41,9 @@ const newGames = `games?${key_url}&dates=${lastYear},${currentDate}&ordering=-re
 export const popularGamesURL = () => `${base_url}${popular_games}`;
 export const upcomingGamesURL = () => `${base_url}${upcoming_games}`;
 export const newGamesURL = () => `${base_url}${newGames}`;
+//Game details
+export const gameDetailsURL = (game_id) =>
+  `${base_url}games/${game_id}.json?&key=${key}`;
+//Fetch screenshots
+export const gameScreenshotURL = (game_id) =>
+  `${base_url}games/${game_id}/screenshots?&.json?&key=${key}`;
