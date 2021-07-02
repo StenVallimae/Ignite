@@ -7,12 +7,15 @@ const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;     
     }
     html {
-        &::-webkit-scrollbar{
-            width: 0.5rem;
+        &::-webkit-scrollbar {
+             width: 0.5rem;
         }
-        &::-webkit-scrollbar-thumb{
-            background-color: darkgrey;
+         &::-webkit-scrollbar-thumb {
+    background-color: #ff7676;
         }
+         &::-webkit-scrollbar-track {
+    background: white;
+         }
     }
     body {
         font-family:'Montserrat', sans-serif;
