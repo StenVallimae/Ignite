@@ -82,26 +82,26 @@ const Stats = styled(motion.div)`
 `;
 
 const Info = styled(motion.div)`
-text-align: center;`;
+  text-align: center;
+`;
 
 const Platforms = styled(motion.div)`
   display: flex;
   justify-content: space-evenly;
-  img{
-  margin-left: 3rem;
-}`;
+  img {
+    margin-left: 3rem;
+  }
+`;
 
 const Media = styled(motion.div)`
   margin-top: 5rem;
-  img{
+  img {
     width: 100%;
-    
   }
-`
+`;
 
 const Description = styled(motion.div)`
   margin: 5rem 0rem;
 `;
-
 
 export default GameDetail;
