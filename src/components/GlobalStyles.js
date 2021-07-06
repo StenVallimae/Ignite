@@ -42,6 +42,13 @@ const GlobalStyles = createGlobalStyle`
         text-decoration: none;
         color: #333;
     }
+    img{
+        display: block;
+    }
+    input {
+        font-weight: bold;
+        font-family: "montserrat", sans-serif;
+    }
 `;
 
 export default GlobalStyles;
